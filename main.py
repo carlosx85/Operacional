@@ -3,8 +3,8 @@ import streamlit as st
 Page_cliente = st.sidebar.selectbox(
     'Cliente', ['Incluir', 'Consultar'], 0)
 
-If Page_cliente == 'Incluir' :
-    st.write("ok")
+if Page_cliente == 'Incluir':
+    st.experimental_set_query_params()
 
 
     
