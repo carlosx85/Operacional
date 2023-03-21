@@ -5,7 +5,11 @@ Page_cliente = st.sidebar.selectbox(
 
 if Page_cliente == 'Incluir':
     st.experimental_set_query_params()
-    st.write("""OK""")
+    st.write("""Incluir""")
+
+if Page_cliente == 'Consultar':
+    st.experimental_set_query_params()
+    st.write("""Consultar""")
 
 
     
