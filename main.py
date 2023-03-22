@@ -12,9 +12,7 @@ menu_data = [
         {'icon': "fas fa-tachometer-alt", 'label':"Dashboard",'ttip':"I'm the Dashboard tooltip!"}, #can add a tooltip message
         {'icon': "far fa-copy", 'label':"Right End"},
 ]
-# we can override any part of the primary colors of the menu
-#over_theme = {'txc_inactive': '#FFFFFF','menu_background':'red','txc_active':'yellow','option_active':'blue'}
-over_theme = {'txc_inactive': '#FFFFFF'}
+
 
 
     
