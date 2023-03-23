@@ -1,4 +1,3 @@
-pip install folium
 import folium
 
 mapa = folium.Map(location = [-22.3216682098765, -48.7983356481481],
