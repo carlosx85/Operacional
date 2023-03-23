@@ -1,18 +1,24 @@
-import streamlit as st
+pip install folium
+import folium
 
+mapa = folium.Map(location = [-22.3216682098765, -48.7983356481481],
+              min_zoom=0, 
+              max_zoom=18, 
+             zoom_start=18)
 
-# specify the primary menu definition
-menu_data = [
-        {'icon': "far fa-copy", 'label':"Left End"},
-        {'id':'Copy','icon':"🐙",'label':"Copy"},
-        {'icon': "far fa-chart-bar", 'label':"Chart"},#no tooltip message
-        {'icon': "far fa-address-book", 'label':"Book"},
-        {'id':' Crazy return value 💀','icon': "💀", 'label':"Calendar"},
-        {'icon': "far fa-clone", 'label':"Component"},
-        {'icon': "fas fa-tachometer-alt", 'label':"Dashboard",'ttip':"I'm the Dashboard tooltip!"}, #can add a tooltip message
-        {'icon': "far fa-copy", 'label':"Right End"},
-]
+folium.Marker(location=[-22.3216682098765, -48.7983356481481],  
+              popup = '<i>xxxx</i>', 
+              tooltip='<i>Praçãoxxxxxx</i>', 
+              icon=folium.Icon(color='black', 
+              icon='home', 
+              titles='OpenStreetMap',
+              prefix='fa',
+              min_zoom=0, 
+              max_zoom=18, 
+              zoom_start=18
 
-
+              )).add_to(mapa)            
+            
+mapa
 
     
